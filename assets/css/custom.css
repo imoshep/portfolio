@@ -33,16 +33,14 @@
     background-color: green;
 }
 
-/* -----WHFv-Project----- */
+
+
+/* -----WHF-Project----- */
 
 #WHF .actions {
     margin: 0 1rem;
-    bottom: -7rem;
+    bottom: -6.5rem;
 
-}
-
-#WHF {
-    max-height: 37rem;
 }
 
 #WHF .image {
@@ -50,10 +48,15 @@
 }
 
 @media screen and (max-width: 360px){
+    
+    #WHF {
+        margin-bottom: 2rem;
+    }
+
     #WHF .actions {
         margin: 0 1rem;
-        bottom: 10rem;
-        left: -8rem;
+        bottom: 6rem;
+        left: -7rem;
     }
     
     #WHF .actions li {
@@ -87,39 +90,43 @@
 }
 
 @media screen and (max-width: 360px){
-
+/* 
     #CRM .actions {
-        left: 18rem;
-        bottom: -6rem;
-    }
-        
+        flex-direction: row;
+        justify-content: center;
+        left: -3rem;
+        bottom: -1rem;
+    } */
+/*         
     #CRM .actions li {
-        width: 6rem;
+        max-width: 4rem;
+        padding-top: 0;
     }
-        
-    #CRM .actions li a {
+         */
+    /* #CRM .actions li a {
         color: black !important;
-        background-color: transparent ;
-    }
-
-    #CRM .columns2 {
-        columns: 1;
-        list-style: none;
-    }
+        background-color: white ;
+        box-shadow: none;
+        padding: 0;
+    } */
 }
 
 /* -----TOURS-Project----- */
 
-#TOURS.spotlight.style1 .content {
-    width: 50%;
-}
-
-#TOURS.spotlight.style1 .image {
+#TOURS.spotlight.style1 > div {
     width: 50%;
 }
 
 #TOURS.spotlight.style1 .image img{
     max-width: 100%;
+}
+
+@media screen and (max-width: 360px){
+
+    #TOURS.spotlight.style1 > div {
+        width: 100%;
+    }
+    
 }
 
 /* -----Other Projects----- */
@@ -128,7 +135,7 @@
     gap: 1rem;
 }
 
-
+/* -----General----- */
 
 .mr-sm {
     margin-right: 0.5rem;
@@ -146,6 +153,43 @@
     margin-bottom: 0 !important;
 }
 
+@media screen and (max-width: 360px){
 
+       .columns2 li {
+        padding-left: 0;
+        text-align: start;
+    }
 
+    .inner .columns2.tech li {
+        text-align: start;
+    }
 
+    .inner .columns2.features li {
+        text-align: center;
+    }
+
+    .inner .columns2.features {
+        columns: 1;
+        list-style: none;
+    }
+    
+    .spotlight .actions {
+        flex-direction: row !important;
+        justify-content: center !important;
+        left: -3rem !important;
+        bottom: -1rem !important;
+    }
+
+    .spotlight .actions li {
+        max-width: 4rem !important;
+        padding-top: 0 !important;
+    }
+
+    .spotlight .actions li a {
+        color: black !important;
+        background-color: white !important;
+        box-shadow: none;
+        padding: 0;
+    }
+        
+}
