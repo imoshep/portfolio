@@ -10,7 +10,7 @@
     max-height: 20rem;
 }
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 720px){
     
     #WHF {
         margin-bottom: 2rem;
@@ -45,7 +45,7 @@
     height: 24.5rem;
 }
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 720px){
 
 }
 
@@ -63,7 +63,7 @@
     max-width: 100%;
 }
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 720px){
 
     #TOURS > div {
         width: 100%;
@@ -129,21 +129,8 @@
     bottom: 0;
     margin: 0 4rem 1rem;
 }
-    
-.spotlight .actions.float .secondary {
-    color: white;
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 1);
-}
 
-.actions.float .secondary {
-    background-color: brown;
-}
-
-.actions.float .secondary:hover {
-    background-color: green;
-}
-
-@media screen and (max-width: 360px){
+@media screen and (max-width: 720px){
 
     .columns2 li {
         padding-left: 0;
@@ -168,6 +155,7 @@
         justify-content: center !important;
         left: 0 !important;
         bottom: -3.5rem ;
+        width: 100% !important;
     }
 
     .spotlight .actions li {
@@ -187,4 +175,7 @@
         margin: 0;
         bottom: -2.5rem;
     }
+}
+.contactme::before {
+    font-weight: 900;
 }
